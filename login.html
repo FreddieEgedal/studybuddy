@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+	<head>
+		<title>UCL StudyBuddy - Login</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/login.css">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<!-- JavaScript -->
+		<script src="script/login.js" defer></script>
+	</head>
+
+<body>
+	<div id="logo">
+		<img src="images/ucl.png" alt="UCL Logo" width="150" height="50">
+	</div>
+	<div class="indhold">
+			<p class="h1" ><strong>Login</strong></p>
+			<img class="anonym" src="images/anonym.png" alt="anonym">
+		<form id="form">
+   			<input type="email" id="email" placeholder="E-mail" name="email" required/>
+   			<input type="password" id="password" placeholder="Skriv din kode" name="password" required/>
+			<p id="glemtkodeknap" class="glemtkodetxt">Glemt/Få Kode</p>
+    		<button id="login" onClick="loginknap()" > Log Ind</button>
+			<input type="checkbox" checked="checked">Husk mig! 
+		</form>
+
+		<br>
+
+		<p class="socialemediertxt">Login med</p>
+		<div class="social">
+			<a href="http://www.facebook.com"> <img class="facebook" src="images/facebook.png" alt="facebook"></a>
+			<a href="http://www.instagram.com"> <img class="instagram" src="images/instagram.png" alt="instagram"> <br></a>
+			<a href="http://www.itslearning.com"> <img class="itslearning" src="images/itslearning.png" alt="Itslearning"></a>
+		</div>
+
+		<p class="brugafbuddy">Vilkår for brug af StudyBuddy</p>
+	</div>
+
+	<div id="glemtkode" class="modal">
+
+	<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">x</span>
+				<form id="form2">
+					<a class="modaltxt"> <h1><strong>Tilsend Password</strong></h1><br>Har du glemt dit password, eller er det første gang 
+						at du logger ind på platformen,
+						så kan du indtaste din UCL mail og du vil efter et 
+						kort øjeblik modtage en mail med et nyt password.
+					</a>
+					<input type="email" class="skrivemail" placeholder="Skriv din e-mail"  required/>
+					<br>
+					<button class="tilbage"> Tilbage</button>
+					<button class="sendkode" onClick="faakode()" > Send kode</button>
+					<p id="mybuddy" class="buddytxt2">Vilkår for brug af StudyBuddy</p>
+					<br>  
+				</form>
+		</div>
+
+	</div>
+	
+</body>
+
+</html>

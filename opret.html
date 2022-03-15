@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/icon.png">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/chat.css">
+        
+        <!-- Icon fonts link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Javascript -->
+        <script src="script/dropdown.js" defer></script>
+        <script src="script/navbar.js" defer></script>
+        <script src="script/chat.js" defer></script>
+        <script src="script/clock.js" defer></script>
+ 
+        <title>Study Buddy</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Top bar -->
+            <div class="topmenu">
+                <img class="img_logo" src="images/logo.png" alt="Logo">
+                <form class="searchbar">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="SØG" name="search">
+                </form>
+
+                <div class="topbox">
+
+                    <div class="loginbox">
+                        <i class="fa fa-bell"></i>
+                        <p id="name">Bruh - 1.SEMESTER Multimediedesigner</p>
+                    </div>
+                    
+                    <div class="dropdownbox">
+                        <i class='fa fa-user-circle'></i>
+                        <div class="dropdown">
+                            <button onclick="dropDown()" class="dropbutton"><i class='fa fa-angle-down'></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Min Profil</a>
+                                <a href="#">Mine Grupper</a>
+                                <a href="#">Kalender</a>
+                                <a href="login.html">Log ud</a>
+
+                                <div class="socialbox">
+                                    <i class='fa fa-facebook-square'></i>
+                                    <i class='fa fa-instagram'></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <!-- News bar -->
+            <div class="newsmenu">
+                <div class="newsbox">Bruh</div>
+                <div class="newsbox">Skolen brændt ned</div>
+                <div class="newsbox">Fredagsbar aflyst</div>
+                <div class="newsbox">Gruppemøde D10/3</div>
+                <div class="newsbox">Sten, saks, papir dag D. 11/3</div>
+            </div>
+
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <a href="index.html">SKOLEN</a>
+                <a href="uddannelse.html">UDDANNELSEN</a>
+                <a href="#">SEMESTER</a>
+                <a href="#">KLASSEN</a>
+                <a href="#">GRUPPER</a>
+            </nav>
+
+        </header>
+
+        <!-- Content -->
+        <div class="body-content">
+            <aside>
+                <div id="navbar">
+                    <div id="clock" class="clock"></div>
+                    <a href="#senestenyt">Seneste nyt</a>
+                    <a href="#minegrupper">Mine grupper</a>
+                    <a href="#mineklasser">Mine klasser</a>
+                    <a href="#mitsemester">Mit semester</a>
+                </div>
+            </aside>
+
+            <div class="aside-right">
+                <div class="front-info">
+                    <div>
+                        <h2>Opret et nyt opslag</h2>
+                    </div>
+                    <div>
+                        <a href="index.html">Tilbage</a>
+                        <img src="images/back.png" alt="Opret">
+                    </div>
+                </div>
+
+                <div class="opret-section">
+                    <div class="opret-form">
+        
+                        <form onsubmit="beskedsendt()" class="post" action="" method="post" name="form1">
+                            <p class="hilsen" id="demo"></p>
+                            <br>
+                            <input type="text" name="Titel" class="tekst-box" placeholder="Titel...">
+                            <select id="vælgKategori" class="vælgkategori" required>
+                                <option>Vælg kategori</option>
+                            </select>
+                            <textarea id="tekstfelt" name="Indhold" rows="5" placeholder="Indhold..." required></textarea>
+                            <input id="opret" type="submit" name="submit" class="send-btn" value="opret">
+        
+                            <div class="image-upload">
+                                <label for="file-input">
+                                <img src="images/imageupload.png"/>
+                                </label>
+                                <input id="file-input" type="file"/>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+    </body>
+
+</html>
