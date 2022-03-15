@@ -1,0 +1,137 @@
+.box {
+    width: 70%;
+    min-height: auto;
+    background-color: #FFF;
+    box-shadow: 0 3px 3px 3px gray;
+    padding: 10px;
+    border-radius: 10px;
+	margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.front-img {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.front-img > img {
+    width: 100%;
+    height: auto;
+}
+
+.front-img > div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.box-content {
+    width: 100%;
+    height: auto;
+}
+
+.box:hover > div > h3, .box:hover > div > p, .box:hover > p   {
+	color: white;
+	size: 400px;
+}
+.box:hover { 
+    background: #366c74;
+	border-color: #00454f;
+	color: white;
+	width: 71%;
+	cursor: pointer;
+}
+
+.box-content > h3 {
+    color: #00454F;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0 10px 40px;
+	padding-left: 10px;
+}
+
+.box-content > p {
+    color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 0 40px;
+	padding: 10px;
+}
+
+.box-social-top {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+	color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.box-social-bottom  {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+	color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.box-social-bottom > p {
+    margin-bottom:-10px;
+}
+
+.navbar > a:nth-child(2) {
+    background-color: #FFF;
+    color: #00454F;
+    cursor: default;
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 800px) {
+
+    .box-info > p {
+        font-size: 10px;
+    }
+
+    .box-info > div > p {
+        font-size: 10px;
+		width: auto;
+    }
+
+    .box-content > h3, .box-content > p {
+        margin-left: auto;
+    }
+
+    .box-social-bottom {
+        padding-left: 0;
+    }
+
+    .box-social-bottom > p, .box-social-topSSS > p {
+        font-size: 10px;
+    }
+
+    .front-img {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    
+
+}

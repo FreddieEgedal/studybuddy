@@ -1,0 +1,67 @@
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+
+/* Sidebar styling*/
+#navbar {
+    overflow: hidden;
+    background-color: #00454F;
+    height: 15rem;
+    width: 10rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 15px;
+    padding: 12px 15px;
+    min-width: 160px;
+}
+
+/* Sidebar links */
+#navbar a {
+    color: #ffffff;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Sidebar links hover */
+#navbar a:hover {
+    background-color: #366C74;
+}
+
+/* Indhold */
+.content {
+    display: block;
+    float: right;
+    margin-right: 10rem;
+
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* Resposive */
+@media only screen and (max-width: 600px) {
+
+
+
+}
