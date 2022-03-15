@@ -1,6 +1,6 @@
 //GOD DAG TEKST
 
-function chatFunction() {
+
     const hour = new Date().getHours();
     let greeting;
 
@@ -21,7 +21,7 @@ function chatFunction() {
     for (let i = 0; i < opretArray.length; ++i) {
         dropdown[dropdown.length] = new Option(opretArray[i], opretArray[i]);
     }
-}
+
 
 //ALERT
 function beskedsendt() {
