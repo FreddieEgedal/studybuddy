@@ -10,6 +10,10 @@
     margin-right: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 .front-img {
     width: 50%;
     height: auto;
